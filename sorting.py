@@ -1,8 +1,10 @@
+# Python File Sorter
+# Organizes files in a directory based on file extension
 import os, shutil
 
 # path defined =>
 path = r"C:\Users\ASHA\Downloads"
-print(path);
+print(path)
 
 folder_names = [
     "Images",
@@ -23,7 +25,7 @@ for folder in folder_names:
 
   if not os.path.exists(folder_path):
     os.makedirs(folder_path)
-    print("files created");
+    print("files created")
 
 file_types = {
     ".pdf": "PDF Files",
